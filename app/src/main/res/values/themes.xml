@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UniverseApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_1</item>
+        <item name="colorPrimaryVariant">@color/blueNight</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gray_1</item>
+        <item name="colorSecondaryVariant">@color/gray_2</item>
+        <item name="colorOnSecondary">@color/blue_2</item>
+        <item name="colorAccent">@color/blue_3</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondary</item>
+        <!-- Customize your theme here. -->
+        <!--Font-->
+        <item name="fontFamily">@font/productsans_regular</item>
+        <item name="android:buttonStyle">@style/NoShadowButton</item>
+        <!--Floating action button style-->
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
+    </style>
+
+    <!--menu style-->
+<!--    <item name="textAppearanceLargePopupMenu" type="">@style/TextAppearance.App.Subtitle1</item>-->
+<!--    <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.App.Subtitle1</item>-->
+<!--    <item name="popupMenuBackground">@drawable/rounded_corners_menu</item>-->
+
+    <!-- Action bar theme -->
+    <style name="Theme.UniverseApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.UniverseApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.UniverseApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Menu theme -->
+    <style name="AppTheme"></style>
+    <style name="menu_text_style" parent="AppTheme">
+        <item name="android:textSize">100sp</item>
+        <item name="fontFamily">@font/productsans_medium</item>
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- Text font -->
+    <style name="style_textview">
+    <item name="fontFamily">@font/productsans_medium</item>
+    </style>
+    <!--Button style-without shadow!-->
+    <style name="NoShadowButton" parent="android:style/Widget.Button">
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <!--Floating action button!-->
+    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabShapeStyle</item>
+    </style>
+    <style name="FabShapeStyle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">30%</item>
+    </style>
+
+    <!--Toolbar style-->
+    <style name="AppTheme.ToolbarFont" parent="AppTheme">
+        <!--This line changes the color of text in Toolbar-->
+        <item name="android:textColorPrimary">@color/blue_1</item>
+        <!--This line changes the color of icons in toolbar (back, overflow menu icons)-->
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/productsans_regular</item>
+    </style>
+
+    <!--menu style-->
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/productsans_regular</item>
+        <item name="android:fontFamily">@font/productsans_regular</item>
+        <item name="android:textColor">@color/blueNight</item>
+    </style>
+
+
+</resources>

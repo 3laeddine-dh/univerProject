@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Universe</string>
+    <string name="you">You</string>
+    <string name="itemOne">can receive notifications about your university news</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="vector_1" translatable="false">vector_1</string>
+    <string name="btn_get">Get Started!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="join">Join</string>
+    <string name="can_receive_notifications_about_your_university_news">Can receive notifications about your university news</string>
+    <string name="welcome_to_universe">Welcome to universe</string>
+    <string name="sign_in">Sign in</string>
+    <string name="do_you_want_to_create_university_account">Do you want to create university account?</string>
+    <string name="create_university_account">Create university account</string>
+    <string name="Join">Join</string>
+    <string name="create">Create your account</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="des" translatable="false">TODO</string>
+    <string name="address">Address</string>
+    <string name="doc">Upload document</string>
+    <string name="signin">Sign in</string>
+    <string name="signinDes">Sign in using your email</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="forgetpassword">Forget Password</string>
+    <string name="forgetpassworddes">Please enter and check your email</string>
+    <string name="send">Send</string>
+    <string name="newPassword">Create new password</string>
+    <string name="home">Home</string>
+    <string name="close_drawer" translatable="false">close</string>
+    <string name="open_drawer" translatable="false">open</string>
+    <string name="title_activity_main2" translatable="false">MainActivity2</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="account">Account</string>
+    <string name="notif">Notifications</string>
+    <string name="language">Language</string>
+    <string name="adminpro">Adminstratives&amp; professors</string>
+    <string name="settings">Settings&amp; account</string>
+    <string name="universityname">University Name</string>
+    <string name="informations">Informations</string>
+    <string name="changesettings">Settings</string>
+    <string name="chat" translatable="false">TextView</string>
+    <string name="nameChanGroup">Name of channel or group</string>
+    <string name="Addadmin">Add Admin</string>
+    <string name="Removeadmin">Remove Admin</string>
+    <string name="deletechannel">Delete channel</string>
+    <string name="deletegroup">Delete group</string>
+    <string name="createchannel">Create channel</string>
+    <string name="creategroup">Create Group</string>
+
+
+    <string name="newnoti">New</string>
+    <string name="favorite">Favorites</string>
+    <string name="emptyhome">Your home is empty search and follow channels and join groups to receive news</string>
+    <string name="roomname">Room name</string>
+    <string name="university">University</string>
+    <string name="editprofile">Edit profile</string>
+    <string name="changepassword">Change password</string>
+    <string name="Aboutapp">About App</string>
+    <string name="Logout">Logout</string>
+    <string name="newpassword">New password</string>
+    <string name="appdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                  Duis aute irure dolor in reprehenderit in voluptate velit
+                                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                  occaecat cupidatat non proident.</string>
+    <string name="signature">Developers team!</string>
+    <string name="logout">Logout</string>
+    <string name="channelname">Channel Name</string>
+    <string name="browse">Browse categories</string>
+    <string name="search">Search</string>
+    <string name="Discover">Discover_title</string>
+
+    <string name="arabic">العربية</string>
+    <string name="english">English</string>
+    <string name="francais">Francais</string>
+    <string name="delete">Delete</string>
+    <string name="follow_channel">Follow</string>
+    <string name="unfollow_channel">Unfollow</string>
+    <string name="unfavorite">Unfavorite</string>
+
+
+</resources>

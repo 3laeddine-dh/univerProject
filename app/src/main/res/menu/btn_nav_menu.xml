@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_blue"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/favorite"
+        android:enabled="true"
+        android:icon="@drawable/ic_favoriteblue"
+        android:title="Favorite"
+
+        />
+
+    <item
+        android:id="@+id/notification"
+        android:enabled="true"
+        android:icon="@drawable/ic_notificationblue"
+        android:title="@string/notif"/>
+    <item
+        android:id="@+id/discover"
+        android:enabled="true"
+        android:icon="@drawable/ic_discover"
+        android:title="Discover"
+
+        />
+
+
+
+</menu>

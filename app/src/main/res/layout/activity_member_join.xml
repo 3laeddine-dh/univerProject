@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pojo.started.MemberJoin" >
+
+
+    <Button
+        android:id="@+id/btn_mmbr_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Join"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword_input" />
+
+    <TextView
+            android:id="@+id/join"
+            android:layout_width="109dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/productsans_medium"
+            android:text="@string/Join"
+            android:textColor="@color/blue_1"
+            android:textSize="38sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/back_btn_join_member_to_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:background="#00FFFFFF"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:src="@drawable/ic_back_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/des" />
+
+        <TextView
+            android:id="@+id/join_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/productsans_regular"
+            android:text="@string/create"
+            android:textColor="@color/gray_1"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join"
+            />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/name"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text"
+            app:helperText="Required*"
+            app:helperTextTextColor="@color/gray_1"
+            app:hintTextColor="@color/gray_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/ic_account_icon">
+
+            <EditText
+                android:id="@+id/name_input_join"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            app:helperText="Required*"
+            app:helperTextTextColor="@color/gray_1"
+            app:hintTextColor="@color/gray_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_input"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <EditText
+                android:id="@+id/password_input_join"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        //password input
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPassword_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/confirm"
+            app:endIconMode="password_toggle"
+            app:helperText="Required*"
+            app:helperTextTextColor="@color/gray_1"
+            app:hintTextColor="@color/gray_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_input"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <EditText
+                android:id="@+id/confirmPpassword_input_join_member"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        //Email input
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/email"
+            app:endIconMode="clear_text"
+            app:helperText="Required*"
+            app:helperTextTextColor="@color/gray_1"
+            app:hintTextColor="@color/gray_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_input"
+            app:startIconDrawable="@drawable/ic_email_icon">
+
+            <EditText
+                android:id="@+id/email_input_join"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

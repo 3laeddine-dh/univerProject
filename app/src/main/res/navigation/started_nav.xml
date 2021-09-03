@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/started_nav"
+    app:startDestination="@id/started_frag">
+
+
+
+    <fragment
+            android:id="@+id/signin_frag"
+            android:name="com.example.universeapp.ui.fragments.started.signin_frag"
+            android:label="signin_frag">
+            <action
+                android:id="@+id/action_signin_frag_to_resetEmail_frag"
+                app:destination="@id/resetEmail_frag" />
+
+        <action
+            android:id="@+id/action_signin_frag_to_main_nav"
+            app:destination="@id/map_nav" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/memberJoin_frag"
+        android:name="com.example.universeapp.ui.fragments.started.memberJoin_frag"
+        android:label="memberJoin_frag" >
+        <action
+            android:id="@+id/action_memberJoin_frag_to_signin_frag"
+            app:destination="@id/signin_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/universityJoin_frag"
+        android:name="com.example.universeapp.ui.fragments.started.universityJoin_frag"
+        android:label="universityJoin_frag" >
+        <action
+            android:id="@+id/action_universityJoin_frag_to_signin_frag"
+            app:destination="@id/signin_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/wellcome_frag"
+        android:name="com.example.universeapp.ui.fragments.started.wellcome_frag"
+        android:label="wellcome_frag" >
+        <action
+            android:id="@+id/action_wellcome_frag_to_universityJoin_frag"
+            app:destination="@id/universityJoin_frag" />
+        <action
+            android:id="@+id/action_wellcome_frag_to_memberJoin_frag"
+            app:destination="@id/memberJoin_frag" />
+        <action
+            android:id="@+id/action_wellcome_frag_to_signin_frag"
+            app:destination="@id/signin_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPass_frag"
+        android:name="com.example.universeapp.ui.fragments.started.newPass_frag"
+        android:label="newPass_frag" />
+    <fragment
+        android:id="@+id/started_frag"
+        android:name="com.example.universeapp.ui.fragments.started.started_frag"
+        android:label="started_frag" >
+        <action
+            android:id="@+id/action_started_frag_to_wellcome_frag"
+            app:destination="@id/wellcome_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetEmail_frag"
+        android:name="com.example.universeapp.ui.fragments.started.resetEmail_frag"
+        android:label="resetEmail_frag" >
+        <action
+            android:id="@+id/action_resetEmail_frag_to_newPass_frag"
+            app:destination="@id/newPass_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/logo_frag2"
+        android:name="com.example.universeapp.ui.fragments.started.logo_frag"
+        android:label="logo_frag" >
+        <action
+            android:id="@+id/action_logo_frag2_to_started_frag"
+            app:destination="@id/started_frag" />
+    </fragment>
+
+    <include app:graph="@navigation/map_nav"/>
+
+</navigation>

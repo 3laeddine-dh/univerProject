@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/home"
+    app:startDestination="@id/home_frag">
+    <fragment
+        android:id="@+id/home_frag"
+        android:name="com.example.universeapp.ui.fragments.Home.home_frag"
+        android:label="home_frag" />
+</navigation>

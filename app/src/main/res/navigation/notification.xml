@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/notification"
+    app:startDestination="@id/notification_frag">
+    <fragment
+        android:id="@+id/notification_frag"
+        android:name="com.example.universeapp.ui.fragments.Home.notification_frag"
+        android:label="notification_frag" />
+</navigation>

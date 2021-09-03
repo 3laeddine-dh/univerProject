@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activity.profile">
+    <!--Account toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/account_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--back button-->
+        <ImageButton
+            android:id="@+id/back_btn_resetEmail_to_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_back_icon"
+            android:tint="@color/blueNight"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="15dp" />
+        <!--toolbar title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/productsans_medium"
+            android:text="@string/account"
+            android:textColor="@color/blueNight"
+            android:textSize="26sp" />
+    </androidx.appcompat.widget.Toolbar>
+    <!--profile avatar-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/account_toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/edit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+        <ImageButton
+            android:id="@+id/save_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_baseline_save_24" />
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="59dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_useravatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_toolbar"
+        app:riv_oval="true" />
+    <!--Name-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/name"
+        android:textColor="@color/gray_1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_toolbar" />
+    <!--Name -->
+    <EditText
+        android:id="@+id/et_name_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/account_toolbar" />
+
+    <!--university-->
+
+    <EditText
+        android:id="@+id/et_university_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/university"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_profile" />
+
+    <TextView
+        android:id="@+id/university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/university"
+        android:textColor="@color/gray_1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+    <!--university-->
+    <!--email-->
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/email"
+        android:textColor="@color/gray_1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/university" />
+    <!--email-->
+    <!--Change password-->
+
+    <EditText
+        android:id="@+id/et_email_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/et_university_profile" />
+
+    <TextView
+        android:id="@+id/editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/editprofile"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+    <!--change password button-->
+    <ImageButton
+        android:id="@+id/image_button_nav_dashboard"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:src="@drawable/ic_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo"/>
+    <!--About App-->
+    <TextView
+        android:id="@+id/aboutapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/Aboutapp"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editprofile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

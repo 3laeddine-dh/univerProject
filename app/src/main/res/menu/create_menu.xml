@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/option_1"
+        android:title="@string/createchannel"
+        android:icon="@drawable/ic_create"
+        android:iconTint="@color/gray_2"/>
+    <item android:id="@+id/option_2"
+        android:title="@string/creategroup"
+        android:icon="@drawable/ic_create"/>
+
+</menu>

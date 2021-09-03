@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_admin_menu_item"
+        android:icon="@drawable/ic_add_adminchgroup"
+        android:title="@string/Addadmin" />
+    <item
+        android:id="@+id/remove_admin_menuItem"
+        android:icon="@drawable/ic_removeadmin"
+        android:title="@string/Removeadmin" />
+    <item
+        android:id="@+id/delete_channel_menu_item"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/deletechannel" />
+
+</menu>

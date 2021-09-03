@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activity.AboutApp">
+    <!--Aboutapp toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--back button-->
+        <ImageButton
+            android:id="@+id/back_btn_resetEmail_to_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_back_icon"
+            android:tint="@color/blueNight"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="15dp"
+            android:contentDescription="@string/todo"/>
+        <!--toolbar title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/productsans_medium"
+            android:text="@string/Aboutapp"
+            android:textColor="@color/blueNight"
+            android:textSize="26sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--image-->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_aboutapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+    <!--Description-->
+    <TextView
+        android:id="@+id/aboutdesc"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/productsans_regular"
+        android:justificationMode="inter_word"
+        android:textSize="16sp"
+        android:text="@string/appdescription"
+        android:textColor="@color/gray_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.075" />
+    <!--signature-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="@string/signature"
+        android:textColor="@color/blue_1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutdesc"
+        app:layout_constraintVertical_bias="0.075" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

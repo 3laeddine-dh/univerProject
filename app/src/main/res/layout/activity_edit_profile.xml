@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activity.EditProfileActivity">
+    <!--edit toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/notification_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--back button-->
+        <ImageButton
+            android:id="@+id/back_btn_resetEmail_to_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_back_icon"
+            android:tint="@color/blueNight"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="15dp"
+            android:contentDescription="@string/todo"/>
+        <!--toolbar title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/productsans_medium"
+            android:text="@string/account"
+            android:textColor="@color/blueNight"
+            android:textSize="26sp" />
+    </androidx.appcompat.widget.Toolbar>
+    <!--profile avatar-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="59dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_useravatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_toolbar"
+        app:riv_oval="true" />
+    <!--Name-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/name"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_toolbar" />
+    <!--Name -->
+    <!--university-->
+
+    <EditText
+        android:id="@+id/username_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="250dp"
+        android:hint="@string/name"
+        android:textColor="@color/blueNight"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_toolbar" />
+
+    <TextView
+        android:id="@+id/university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/university"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+    <!--university-->
+    <EditText
+        android:id="@+id/universityname_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="26dp"
+        android:hint="@string/university"
+        android:textColor="@color/blueNight"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_profile" />
+    <!--email-->
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/email"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/university" />
+    <!--email-->
+    <EditText
+        android:id="@+id/useremail_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="26dp"
+        android:hint="@string/email"
+        android:textColor="@color/blueNight"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/universityname_profile" />
+    <!--Change password-->
+    <TextView
+        android:id="@+id/changepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/changepassword"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+    <!--change password button-->
+    <ImageButton
+        android:id="@+id/chandepssword_btn"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:src="@drawable/ic_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

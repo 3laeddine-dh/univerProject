@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <ImageButton
+        android:id="@+id/image_btn_nav_account"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:src="@drawable/ic_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nav_profileName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/nav_profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/productsans_regular"
+        android:text="@string/universityname"
+        android:textColor="@color/blueNight"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account" />
+
+    <TextView
+        android:id="@+id/nav_profile_subName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/productsans_regular"
+        android:text="@string/informations"
+        android:textColor="@color/gray_1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_profileName" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+
+        android:id="@+id/profile_image"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_universityavatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account"
+        app:riv_oval="true"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/productsans_regular"
+        android:text="@string/account"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/changeSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/productsans_regular"
+        android:text="@string/changesettings"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/ic_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/changeSettings"
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/notif"
+        android:textColor="@color/blueNight"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/language_text_btn" />
+
+    <ImageView
+        android:id="@+id/icon_admin_picture_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_listap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        android:contentDescription="@string/todo"/>
+
+    <ImageButton
+        android:id="@+id/image_button_nav_dashboard"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="393dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:src="@drawable/ic_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/text_button_admin_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/adminpro"
+        android:textColor="@color/blueNight"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/icon_admin_picture_header"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/switch_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="12dp"
+        android:background="#00FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:src="@drawable/ic_buttonnotif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/language_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/language"
+        android:textSize="16sp"
+        android:textColor="@color/blueNight"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/changeSettings"
+        android:contentDescription="@string/todo"/>
+
+    <ImageButton
+        android:id="@+id/image_btn_nav_languague"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:src="@drawable/ic_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/language_text_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_notif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:contentDescription="@string/todo"/>
+
+
+    <ImageView
+        android:id="@+id/logout_image_button"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_admin_picture_header"
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/logout_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/productsans_medium"
+        android:text="@string/Logout"
+        android:textColor="@color/blueNight"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/logout_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/text_button_admin_header" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
